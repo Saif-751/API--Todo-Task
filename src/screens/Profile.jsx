@@ -19,7 +19,6 @@ const Profile = ({ navigation }) => {
     try {
       const response = await Index.get("/product");
       setProducts(response.data);
-      console.log("res", response.data);
     } catch (error) {
       console.log("wrong something", error);
     } finally {
